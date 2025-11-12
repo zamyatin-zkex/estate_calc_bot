@@ -2,7 +2,7 @@ FROM golang:1.20-alpine as builder
 
 ENV GO111MODULE=on
 ENV CGO_ENABLED=0
-ENV GOFLAGS="-mod=vendor"
+#ENV GOFLAGS="-mod=vendor"
 WORKDIR /app
 
 COPY . .
